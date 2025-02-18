@@ -4,15 +4,15 @@ import { IAreaService } from "../types/services";
 export class KodeWilayah implements IAreaService {
 
    //BASE_URL = "http://202.179.191.77:8585/";
-    BASE_URL = "http://localhost:8585/";
+    BASE_URL = "http://38.210.85.183:8585/";
 
     token: string | null = null;
 
     private async authenticate() {
         const response = await fetch(`${this.BASE_URL}kode-wap/token`, {
             headers: {
-                TimeStamp: '2025-01-31T07:00:00Z',
-                PartnerKey: 'V9Xw/QsN7PGW0203jO7xbeJhaowt65DIBBAkBhoOkIg=',
+                TimeStamp: '2024-05-08T07:00:00Z',
+                PartnerKey: 'b9PDmCSkUIDAUn5BvG8PlBbAnGiaEEW1/RmVbxBTs38=',
                 PartnerName: 'kpuid'
             }
         });
